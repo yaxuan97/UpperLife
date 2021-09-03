@@ -4,4 +4,4 @@ Game Upper Life
 
 ---
 
-原版游戏 [lifeRestart](https://github.com/VickScarlet/lifeRestart) 原作者：[神戸小鳥](https://github.com/VickScarlet)
+原版游戏 [lifeRestart](https://liferestart.syaro.io/) 原作者：[神戸小鳥](https://github.com/VickScarlet)
