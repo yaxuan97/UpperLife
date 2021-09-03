@@ -9,7 +9,7 @@ class App{
     #life;
     #pages;
     #talentSelected = new Set();
-    #totalMax=44;
+    #totalMax=999;
     #isEnd = false;
     #selectedExtendTalent = [];
     #hintTimeout;
@@ -86,8 +86,8 @@ class App{
                                 li.removeClass('selected')
                                 this.#talentSelected.delete(talent);
                             } else {
-                                if(this.#talentSelected.size==12) {
-                                    this.hint('只能选12个天赋');
+                                if(this.#talentSelected.size==99) {
+                                    this.hint('只能选99个天赋');
                                     return;
                                 }
 
