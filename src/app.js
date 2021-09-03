@@ -225,7 +225,7 @@ class App{
             .click(()=>{
                 if(total()!=this.#totalMax) {
                     this.hint(`你还有${this.#totalMax-total()}属性点没有分配完`);
-                    return;
+                    //return;
                 }
                 this.#life.restart({
                     CHR: groups.CHR.get(),
