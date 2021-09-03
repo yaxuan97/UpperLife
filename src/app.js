@@ -11,7 +11,7 @@ class App{
     #talentSelected = new Set();
     #totalMax=44;
     #isEnd = false;
-    #selectedExtendTalent = null;
+    #selectedExtendTalent = [];
     #hintTimeout;
 
     async initial() {
@@ -305,7 +305,7 @@ class App{
             .click(()=>{
                 this.times ++;
                 this.#life.talentExtend(this.#selectedExtendTalent);
-                this.#selectedExtendTalent = null;
+                this.#selectedExtendTalent = [];
                 this.#talentSelected.clear();
                 this.#totalMax = 44;
                 this.#isEnd = false;
@@ -377,13 +377,13 @@ class App{
                         talents.append(li);
                         li.click(()=>{
                             if(li.hasClass('selected')) {
-                                this.#selectedExtendTalent = null;
+                                this.#selectedExtendTalent.splice(this.#selectedExtendTalent.indexOf(talent.id, 1));
                                 li.removeClass('selected');
-                            } else if(this.#selectedExtendTalent != null) {
-                                this.hint('只能继承一个天赋');
+                            } else if(this.#selectedExtendTalent.length >= 2) {
+                                this.hint('只能继承2个天赋');
                                 return;
                             } else {
-                                this.#selectedExtendTalent = talent.id;
+                                this.#selectedExtendTalent.push(talent.id);
                                 li.addClass('selected');
                             }
                         });
