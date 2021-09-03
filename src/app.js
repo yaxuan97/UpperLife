@@ -30,7 +30,8 @@ class App{
         const loadingPage = $(`
         <div id="main">
             <div id="title">
-                人生重开模拟器-人上人版<br>
+                人上人版<br>
+                人生重开模拟器<br>
                 <div style="font-size:1.5rem; font-weight:normal;">加载中...</div>
             </div>
         </div>
