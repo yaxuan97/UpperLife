@@ -47,17 +47,20 @@ class Talent {
         const talentList = {};
         for(const talentId in this.#talents) {
             const { id, grade, name, description } = this.#talents[talentId];
-            if(id == include) {
-                include = { grade, name, description, id };
-                continue;
+            for (let i = 0; i < include.length; i++) {
+                if(id == include[i]) {
+                    include[i] = { grade, name, description, id };
+                    continue;
+                }
             }
+            
             if(!talentList[grade]) talentList[grade] = [{ grade, name, description, id }];
             else talentList[grade].push({ grade, name, description, id });
         }
 
         return new Array(16)  //重生选择天赋数量        
             .fill(1).map((v, i)=>{
-                if(!i && include) return include;
+                if(include && include[i]) return include[i];
                 const gradeRandom = Math.random();
                 let grade;
                 if(gradeRandom>=0.111) grade = 0;
