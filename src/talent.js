@@ -47,12 +47,14 @@ class Talent {
         const talentList = {};
         for(const talentId in this.#talents) {
             const { id, grade, name, description } = this.#talents[talentId];
-            for (let i = 0; i < include.length; i++) {
-                if(id == include[i]) {
-                    include[i] = { grade, name, description, id };
-                    continue;
+            if (include) {
+                for (let i = 0; i < include.length; i++) {
+                    if(id == include[i]) {
+                        include[i] = { grade, name, description, id };
+                        continue;
+                    }
                 }
-            }
+            }            
             
             if(!talentList[grade]) talentList[grade] = [{ grade, name, description, id }];
             else talentList[grade].push({ grade, name, description, id });
