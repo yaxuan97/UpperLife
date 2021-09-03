@@ -30,7 +30,7 @@ class App{
         const loadingPage = $(`
         <div id="main">
             <div id="title">
-                人生重开模拟器<br>
+                人上人重开模拟器<br>
                 <div style="font-size:1.5rem; font-weight:normal;">加载中...</div>
             </div>
         </div>
@@ -42,7 +42,7 @@ class App{
             <div id="cnt" class="head">已重开1次</div>
             <button id="rank">排行榜</button>
             <div id="title">
-                人生重开模拟器<br>
+                人上人重开模拟器<br>
                 <div style="font-size:1.5rem; font-weight:normal;">这垃圾人生一秒也不想呆了</div>
             </div>
             <button id="restart" class="mainbtn"><span class="iconfont">&#xe6a7;</span>立即重开</button>
@@ -130,7 +130,7 @@ class App{
             </div>
             <ul id="propertyAllocation" class="propinitial"></ul>
             <button id="random" class="mainbtn" style="top:auto; bottom:7rem">随机分配</button>
-            <button id="start" class="mainbtn" style="top:auto; bottom:0.1rem">开始新人生</button>
+            <button id="start" class="mainbtn" style="top:auto; bottom:0.1rem">开始人上人</button>
         </div>
         `);
 
@@ -243,7 +243,7 @@ class App{
         const trajectoryPage = $(`
         <div id="main">
             <ul id="lifeTrajectory" class="lifeTrajectory"></ul>
-            <button id="summary" class="mainbtn" style="top:auto; bottom:0.1rem">人生总结</button>
+            <button id="summary" class="mainbtn" style="top:auto; bottom:0.1rem">人上人总结</button>
         </div>
         `);
 
@@ -283,7 +283,7 @@ class App{
         // Summary
         const summaryPage = $(`
         <div id="main">
-            <div class="head">人生总结</div>
+            <div class="head">人上人总结</div>
             <ul id="judge" class="judge" style="bottom: calc(35% + 2.5rem)">
                 <li class="grade2"><span>颜值：</span>9级 美若天仙</li>
                 <li><span>智力：</span>4级 智力一般</li>
