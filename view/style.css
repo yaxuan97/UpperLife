@@ -318,10 +318,10 @@ i {
   background: #ed1c24;
 }
 .banner.info {
-  background: skyblue;
+  background: hotpink;
 }
 .banner.info::after {
-  background: skyblue;
+  background: hotpink;
 }
 
 .banner::after {
