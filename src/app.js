@@ -118,7 +118,7 @@ class App{
                     this.hint('请选择至少3个天赋');
                     return;
                 }
-                this.#totalMax = 44 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
+                this.#totalMax = 999 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
                 this.switch('property');
             })
 
@@ -308,7 +308,7 @@ class App{
                 this.#life.talentExtend(this.#selectedExtendTalent);
                 this.#selectedExtendTalent = [];
                 this.#talentSelected.clear();
-                this.#totalMax = 44;
+                this.#totalMax = 999;
                 this.#isEnd = false;
                 this.switch('index');
             });
@@ -346,7 +346,7 @@ class App{
                 clear: ()=>{
                     talentPage.find('ul.selectlist').empty();
                     talentPage.find('#random').show();
-                    this.#totalMax = 44;
+                    this.#totalMax = 999;
                 },
             },
             property: {
