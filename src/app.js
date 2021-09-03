@@ -204,9 +204,9 @@ class App{
             .find('#random')
             .click(()=>{
                 let t = this.#totalMax;
-                const arr = [14, 14, 14, 14];
+                const arr = [260, 260, 260, 260];
                 while(t>0) {
-                    const sub = Math.round(Math.random() * (Math.min(t, 14) - 1)) + 1;
+                    const sub = Math.round(Math.random() * (Math.min(t, 260) - 1)) + 1;
                     while(true) {
                         const select = Math.floor(Math.random() * 4) % 4;
                         if(arr[select] - sub <0) continue;
@@ -215,10 +215,10 @@ class App{
                         break;
                     }
                 }
-                groups.CHR.set(14 - arr[0]);
-                groups.INT.set(14 - arr[1]);
-                groups.STR.set(14 - arr[2]);
-                groups.MNY.set(14 - arr[3]);
+                groups.CHR.set(260 - arr[0]);
+                groups.INT.set(260 - arr[1]);
+                groups.STR.set(260 - arr[2]);
+                groups.MNY.set(260 - arr[3]);
             });
 
         propertyPage
