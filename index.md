@@ -1,3 +1,3 @@
 # Life Restart
 
-やり直すんだ。そして、次はうまくやる。[RESTART](view/index.html)
+这人生太烂了，我要做人上人！[RESTART](lifeRestart/view/index.html)
