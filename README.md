@@ -1,6 +1,6 @@
 # 人生重开模拟器-人上人版
 人生重开模拟器-人上人版  
-[点击开始游戏](https://nbqq.github.io/UpperLife)  
+[点击开始游戏](https://nbqq.github.io/UpperLife/view/)  
 
 ---
 
