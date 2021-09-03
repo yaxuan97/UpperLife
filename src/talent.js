@@ -43,7 +43,7 @@ class Talent {
     }
 
     talentRandom(include) {
-        // 1000, 100, 10, 1
+        // 1000, 100, 10, 1  重生选择天赋数量
         const talentList = {};
         for(const talentId in this.#talents) {
             const { id, grade, name, description } = this.#talents[talentId];
@@ -55,7 +55,7 @@ class Talent {
             else talentList[grade].push({ grade, name, description, id });
         }
 
-        return new Array(10)
+        return new Array(16)  //重生选择天赋数量        
             .fill(1).map((v, i)=>{
                 if(!i && include) return include;
                 const gradeRandom = Math.random();
