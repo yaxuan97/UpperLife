@@ -94,7 +94,7 @@ html {
     padding: 0.1rem 1rem;
     border: none;
     border-radius: 0.2rem;
-    background-color:pink;
+    background-color:lightpink;
     font-size: 1.4rem;
     color: white;
     cursor: pointer;
@@ -206,8 +206,8 @@ html {
 }
 
 .lifeTrajectory {
-    border: 1px pink solid;
-    background-color: lightpink;
+    border: 1px lightpink solid;
+    background-color: #ffb6c173;
 }
 
 .judge > li,
@@ -218,7 +218,7 @@ html {
     padding: 0.5rem 1rem 0.5rem 6rem;
     font-size: 1.4rem;
     background-color: white;
-    box-shadow: pink 0 0 0.4rem;
+    box-shadow: lightpink 0 0 0.4rem;
 }
 
 .judge > li > span,
@@ -318,10 +318,10 @@ i {
   background: #ed1c24;
 }
 .banner.info {
-  background: hotpink;
+  background: pink;
 }
 .banner.info::after {
-  background: hotpink;
+  background: pink;
 }
 
 .banner::after {
